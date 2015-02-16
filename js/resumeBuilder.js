@@ -186,7 +186,7 @@ var projects = {
             "description": "Create objects from four JSONs, each one representing a different resume section. Encapslate functions such as display() within their objects, and iterate through each JSON appending its information to index.html in the correct section.",
             "images": [
                 {
-                    "url": "images/resume.png"
+                    "url": "images/resume.PNG"
                 }
             ],
             "url": "https://github.com/bill-parks/frontend-nanodegree-resume",
