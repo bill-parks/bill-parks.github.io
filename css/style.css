@@ -21,6 +21,10 @@
   max-width: 500px;
 }
 
+body {
+    background-color: #F3F3F3;
+}
+
 h1 {
   font-size: 40px;
   color: #F5A623;
