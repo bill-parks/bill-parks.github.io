@@ -105,7 +105,7 @@ var education = {
 			$(".education-entry:last").append(formattedSchoolDates);
 			};
     	for (i in education.onlineCourses){
-			$("#onlineclasses").append(HTMLschoolStart);
+			$("#onlineclasses").append(HTMLonlineStart);
 			var formattedOnlineTitle = HTMLonlineTitle.replace("%data%",education.onlineCourses[i].title).replace("#",education.onlineCourses[i].url);
 			var formattedOnlineSchool = HTMLonlineSchool.replace("%data%",education.onlineCourses[i].school);
 			var formattedOnlineCourse = formattedOnlineTitle + formattedOnlineSchool;

@@ -2,46 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Resume</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <script src="js/jQuery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script src="js/helper.js"></script>
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-  <meta name="viewport" content="width=device-width">
 </head>
 <body>
-  <div id="main">
-    <div id="header" class="center-content clearfix">
-      <ul id="topContacts" class='flex-box'></ul>
-    </div>
-    <div style='clear: both;'></div>
-    <div class="col-12 gray">
-      <h2>Work Experience</h2>
-      <div id="workExperience" class='flex-box gray'>
+  <div id="main" class="container">
+    <div class="row">
+      <div id="header" class="col-md-12 center-content">
+        <ul id="topContacts" class='flex-box'></ul>
       </div>
     </div>
-    <div class="col-12 gray">
-      <h2>Projects</h2>
-      <div id="projects" class="flex-box">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Work Experience</h2>
       </div>
     </div>
-    <div class="col-12 gray">
-      <h2>Education</h2>
-      <div id="education" class='flex-box gray'>
-      </div>
-      <h3>Online Classes</h3>
-      <div id="onlineclasses" class='flex-box gray'>
+    <div id="workExperience" class="row">
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Projects</h2>
       </div>
     </div>
-    <div class="col-12 gray">
-      <h2>Where I've Lived and Worked</h2>
-      <div id="mapDiv">
+    <div id="projects" class="row">
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Education</h2>
       </div>
     </div>
-    <div id="letsConnect" class='flex-box dark-gray'>
-      <h2 class='orange center-text'>Let's Connect</h2>
-      <ul id="footerContacts" class="flex-box">
-      </ul>
+    <div id="education" class="row">
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Online Classes</h3>
+      </div>
+    </div>
+    <div id="onlineclasses" class='row'>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Where I've Lived and Worked</h2>
+      </div>
+    </div>
+    <div id="mapDiv" class="row">
+    </div>
+    <div class="row">
+      <div id="letsConnect" class='col-md-12 dark-gray'>
+        <h2 class='orange center-text'>Let's Connect</h2>
+        <ul id="footerContacts" class="flex-box">
+        </ul>
+      </div>
     </div>
   </div>
   <script src="js/resumeBuilder.js"></script>

@@ -8,17 +8,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.clearfix {
-  overflow: auto;
-}
-
 .education-entry, .work-entry, .project-entry {
   padding-left: 5%;
   padding-right: 5%;
-}
-
-.project-entry  {
-  max-width: 500px;
+  margin-bottom: 20px;
 }
 
 body {
@@ -85,7 +78,7 @@ p {
 a {
   color: #1199C3;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 5px;
   display: block;
 }
 
@@ -168,7 +161,7 @@ ul {
 
 img {
   padding: 10px;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 /* Bar chart stuff */
@@ -240,7 +233,3 @@ span {
     margin-right: auto;
 }
 
-.col-12 {
-    width: 100%;
-    padding: 5px;
-}
