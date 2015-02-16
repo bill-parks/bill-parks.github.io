@@ -1,0 +1,7 @@
+Forked from: https://github.com/udacity/frontend-nanodegree-resume
+JSON validation by: http://jsonlint.com/
+HTML5 validation by: http://validator.w3.org/check
+CSS validation by: https://jigsaw.w3.org/css-validator/#validate_by_input
+JavaScript reference: http://www.w3schools.com/jsref/
+jQuery reference: http://api.jquery.com/
+
