@@ -26,7 +26,7 @@ var HTMLprojectStart = '<div class="col-md-6 project-entry"></div>';
 var HTMLprojectTitle = '<a href="#" target="_new">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
-var HTMLprojectImage = '<img src="%data%">';
+var HTMLprojectImage = '<img src="%data%" class="img-responsive">';
 
 var HTMLschoolStart = '<div class="col-md-2"></div><div class="col-md-5 education-entry"></div>';
 var HTMLschoolName = '<a href="#" target="_new">%data%</a>';

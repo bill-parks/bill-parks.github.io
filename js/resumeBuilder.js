@@ -88,6 +88,18 @@ var education = {
             "school": "Udacity",
             "dates": 2015,
             "url": "https://www.udacity.com/course/ud245"
+        },
+        {
+            "title": "Object-Oriented JavaScript",
+            "school": "Udacity",
+            "dates": 2015,
+            "url": "https://www.udacity.com/course/ud015"
+        },
+        {
+            "title": "HTML5 Canvas",
+            "school": "Udacity",
+            "dates": 2015,
+            "url": "https://www.udacity.com/course/ud292"
         }
     ],
     "display" : function(){
