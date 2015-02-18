@@ -99,6 +99,10 @@ a {
   display: none;
 }
 
+#role {
+  white-space: nowrap;
+}
+
 .orange {
   background-color: #F5AE23;
   margin-top: 0;
