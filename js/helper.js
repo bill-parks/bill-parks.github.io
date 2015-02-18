@@ -240,7 +240,7 @@ The code below initializes Google Map
 */
 
 // Calls the initializeMap() function when the page loads
-window.addEventListener('load', initializeMap);
+//window.addEventListener('load', initializeMap);
 
 if (window.addEventListener) {
   window.addEventListener('load', initializeMap);
