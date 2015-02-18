@@ -242,6 +242,13 @@ The code below initializes Google Map
 // Calls the initializeMap() function when the page loads
 window.addEventListener('load', initializeMap);
 
+if (window.addEventListener) {
+  window.addEventListener('load', initializeMap);
+}
+else {
+    window.attachEvent('load', initializeMap);
+}
+
 // Vanilla JS way to listen for resizing of the window
 // and adjust map bounds
 
