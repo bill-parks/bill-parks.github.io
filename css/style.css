@@ -131,7 +131,7 @@ a {
   background-color:  #0077B0;
 }
 
-.flex-box {
+/*.flex-box {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
@@ -139,7 +139,7 @@ a {
   justify-content: space-around;
   padding: 10px;
 }
-
+*/
 .center-content {
   padding-top: 2.5%;
   padding-left: 5%;
@@ -147,9 +147,9 @@ a {
   padding-bottom: 2.5%;
 }
 
-ul {
+/*ul {
   list-style-type: none;
-}
+}*/
 
 .biopic {
   float: left;
