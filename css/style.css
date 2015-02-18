@@ -101,6 +101,9 @@ a {
 
 .orange {
   background-color: #F5AE23;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .orange-text {
@@ -117,11 +120,12 @@ a {
   padding-bottom: 10px;
 }
 
-.dark-gray {
+#letsConnect {
   background-color:  #0077B0;
   background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: 100% 99%;
+  padding: 0;
 }
 
 #header {
@@ -131,25 +135,12 @@ a {
   background-color:  #0077B0;
 }
 
-/*.flex-box {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px;
-}
-*/
 .center-content {
   padding-top: 2.5%;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 2.5%;
 }
-
-/*ul {
-  list-style-type: none;
-}*/
 
 .biopic {
   float: left;
@@ -231,4 +222,3 @@ span {
     margin-left: auto;
     margin-right: auto;
 }
-
