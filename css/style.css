@@ -126,6 +126,7 @@ a {
 
 #letsConnect {
   background-color:  #0077B0;
+  background: url("../images/banner.jpg");
   background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: 100% 99%;
@@ -133,6 +134,7 @@ a {
 }
 
 #header {
+  background: url("../images/banner.jpg");
   background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: 100% 99%;
