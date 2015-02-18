@@ -58,7 +58,7 @@ $(document).ready(function() {
 function inName(name) {
   name = name.trim().split(" ");
   nameCheck = $('#name').html().trim().split(" ");
-  console.log(nameCheck);
+  //console.log(nameCheck);
   if (nameCheck[1] === nameCheck[1].toUpperCase()) {
      name[1] = name[1].slice(0,1).toUpperCase() + name[1].slice(1).toLowerCase(); 
   }
@@ -81,7 +81,7 @@ function logClicks(x,y) {
       y: y
     }
   );
-  console.log('x location: ' + x + '; y location: ' + y);
+  //console.log('x location: ' + x + '; y location: ' + y);
 }
 
 $(document).click(function(loc) {
