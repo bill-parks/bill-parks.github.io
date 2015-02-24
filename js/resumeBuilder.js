@@ -28,7 +28,7 @@ var bio = {
 	$("#topContacts").append(formattedTwitter);
 	$("#topContacts").append(formattedLocation);
 	$("#header").append("<img src='" + bio.bioPic + "' class='biopic'>");
-	$("#header").append(formattedWelcomeMsg);	
+	$("#header").append(formattedWelcomeMsg);
 	if(bio.skills.length > 0) {
 		$("#header").append(HTMLskillsStart);
 		for (i in bio.skills){
@@ -203,10 +203,27 @@ var projects = {
             ],
             "url": "https://github.com/bill-parks/frontend-nanodegree-resume",
             "more": "dialog.html"
+        },
+        {
+            "title": "Project #3: Arcade Game",
+            "dates": 2015,
+            "description": "Object Oriented JavaScript and HTML5 Canvas are used to reproduce a Frogger-like arcade game.",
+            "images": [
+                {
+                    "url": "images/frogger.PNG"
+                }
+            ],
+            "url": "https://github.com/bill-parks/frontend-nanodegree-arcade-game",
+            "more": "dialog.html"
         }
     ],
     "display" : function() {
 	for (i in projects.project){
+        var x = i;
+        x %= 2;
+        if (x === 0){
+            $("#projects").append(HTMLprojectClearFix);
+        };
 		$("#projects").append(HTMLprojectStart);
 		var formattedTitle = HTMLprojectTitle.replace("%data%",projects.project[i].title).replace("#",projects.project[i].url);
 		$(".project-entry:last").append(formattedTitle);
@@ -217,7 +234,7 @@ var projects = {
 		if (projects.project[i].images.length > 0) {
 			for (image in projects.project[i].images){
 			var formattedImage = HTMLprojectImage.replace("%data%",projects.project[i].images[image].url);
-			$(".project-entry:last").append(formattedImage);	
+			$(".project-entry:last").append(formattedImage);
 			};
 		}
 	  };

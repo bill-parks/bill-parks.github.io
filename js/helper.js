@@ -23,6 +23,7 @@ var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<div class="smaller"><p><br>%data%</p></div>';
 
 var HTMLprojectStart = '<div class="col-md-6 project-entry"></div>';
+var HTMLprojectClearFix = '<div class="clearfix visible-xs"></div>';
 var HTMLprojectTitle = '<a href="#" target="_new">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
@@ -60,12 +61,12 @@ function inName(name) {
   nameCheck = $('#name').html().trim().split(" ");
   //console.log(nameCheck);
   if (nameCheck[1] === nameCheck[1].toUpperCase()) {
-     name[1] = name[1].slice(0,1).toUpperCase() + name[1].slice(1).toLowerCase(); 
+     name[1] = name[1].slice(0,1).toUpperCase() + name[1].slice(1).toLowerCase();
   }
   else {
-    name[1] = name[1].toUpperCase();    
+    name[1] = name[1].toUpperCase();
   };
-  name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase(); 
+  name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
   return name[0] +" "+ name[1];
 }
 
