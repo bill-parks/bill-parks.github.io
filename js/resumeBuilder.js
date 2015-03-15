@@ -96,6 +96,12 @@ var education = {
             "school": "Udacity",
             "dates": 2015,
             "url": "https://www.udacity.com/course/ud292"
+        },
+        {
+            "title": "Website Performance Optimization",
+            "school": "Udacity",
+            "dates": 2015,
+            "url": "https://www.udacity.com/course/ud884"
         }
     ],
     "display" : function(){
