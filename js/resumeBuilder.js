@@ -2,11 +2,10 @@ var bio = {
 	"name" : "Bill Parks",
 	"role" : "Technical Architect",
 	"contacts" : {
-		"mobile" : "501-234-6789",
 		"email" : "bill_parks@att.net",
 		"github" : "bill-parks",
 		"twitter" : "heybillparks",
-		"location" : "Livonia, MI"
+		"location" : "Detroit Area"
 	},
 	"welcomeMessage" : "Welcome to my Interactive Resume - A Udacity Nanodegree &copy; (JavaScript) Project",
 	"skills" : ["HTML","CSS/bootstrap","JavaScript","jQuery","SQL2008","PSQL","ColdFusion11","IIS7","SCM/Git"],
@@ -189,7 +188,7 @@ var projects = {
                     "url": "images/page-mock.png"
                 }
             ],
-            "url": "https://github.com/bill-parks/nanodegree-project1",
+            "url": "https://bill-parks.github.io/frontend-nanodegree-mockup-to-website",
             "more": "dialog.html"
         },
         {
@@ -201,7 +200,7 @@ var projects = {
                     "url": "images/resume.PNG"
                 }
             ],
-            "url": "https://github.com/bill-parks/frontend-nanodegree-resume",
+            "url": "#",
             "more": "dialog.html"
         },
         {
@@ -213,7 +212,7 @@ var projects = {
                     "url": "images/frogger.PNG"
                 }
             ],
-            "url": "https://github.com/bill-parks/frontend-nanodegree-arcade-game",
+            "url": "https://bill-parks.github.io/frontend-nanodegree-arcade-game",
             "more": "dialog.html"
         }
     ],
