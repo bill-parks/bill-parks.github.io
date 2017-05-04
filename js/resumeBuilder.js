@@ -4,31 +4,31 @@ var bio = {
     "contacts": {
         "email": "bill_parks@att.net",
         "github": "bill-parks",
-        "twitter": "heybillparks",
+        "mobile": "555-555-5555",
         "location": "Detroit Area"
     },
     "welcomeMessage": "Welcome to my Interactive Resume - A Udacity Nanodegree &copy; (JavaScript) Project",
     "skills": ["HTML", "CSS/bootstrap", "JavaScript", "jQuery", "SQL2012", "PSQL", "ColdFusion11", "IIS7", "SCM/Git"],
-    "bioPic": "images/bio.jpg",
+    "biopic": "images/bio.jpg",
     "display": function () {
         var formattedName = HTMLheaderName.replace("%data%", bio.name);
         var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
         var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage);
         var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
         var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-        var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+        var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
         var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
         $("#header").prepend(formattedRole);
         $("#header").prepend(formattedName);
         $("#topContacts").append(formattedEmail);
         $("#topContacts").append(formattedGithub);
-        $("#topContacts").append(formattedTwitter);
+        $("#topContacts").append(formattedMobile);
         $("#topContacts").append(formattedLocation);
-        $("#header").append("<img src='" + bio.bioPic + "' class='biopic'>");
+        $("#header").append("<img src='" + bio.biopic + "' class='biopic'>");
         $("#header").append(formattedWelcomeMsg);
         if (bio.skills.length > 0) {
             $("#header").append(HTMLskillsStart);
-            for (var i in bio.skills) {
+            for (var i = 0; i < bio.skills.length; i++) {
                 if (this[i] !== 0) {
                     $("#skills").append(HTMLskills.replace("%data%", bio.skills[i]));
                 }
@@ -36,7 +36,7 @@ var bio = {
         }
         $("#footerContacts").append(formattedEmail);
         $("#footerContacts").append(formattedGithub);
-        $("#footerContacts").append(formattedTwitter);
+        $("#footerContacts").append(formattedMobile);
         $("#footerContacts").append(formattedLocation);
     }
 };
@@ -49,16 +49,16 @@ var education = {
             "name": "Lawrence Technological University",
             "location": "Southfield, Michigan",
             "degree": "Master of Science",
-            "majors": "Information&nbspSystems",
-            "dates": 2013,
+            "majors": ["Information&nbspSystems"],
+            "dates": "2013",
             "url": "http://www.ltu.edu/"
         },
         {
             "name": "Southern Illinois University",
             "location": "Carbondale, Illinois",
             "degree": "Bachelor of Science",
-            "majors": "Workforce&nbsp;Development",
-            "dates": 1995,
+            "majors": ["Workforce&nbsp;Development"],
+            "dates": "1995",
             "url": "http://www.siu.edu/"
         }
     ],
@@ -66,48 +66,48 @@ var education = {
         {
             "title": "Intro to HTML and CSS",
             "school": "Udacity",
-            "dates": 2015,
+            "dates": "2015",
             "url": "https://www.udacity.com/course/ud304"
         },
         {
             "title": "Using Git and GitHub",
             "school": "Udacity",
-            "dates": 2015,
+            "dates": "2015",
             "url": "https://www.udacity.com/course/ud775"
         },
         {
             "title": "JavaScript Basics",
             "school": "Udacity",
-            "dates": 2015,
+            "dates": "2015",
             "url": "https://www.udacity.com/course/ud804"
         },
         {
             "title": "Intro to jQuery",
             "school": "Udacity",
-            "dates": 2015,
+            "dates": "2015",
             "url": "https://www.udacity.com/course/ud245"
         },
         {
             "title": "Object-Oriented JavaScript",
             "school": "Udacity",
-            "dates": 2015,
+            "dates": "2015",
             "url": "https://www.udacity.com/course/ud015"
         },
         {
             "title": "HTML5 Canvas",
             "school": "Udacity",
-            "dates": 2015,
+            "dates": "2015",
             "url": "https://www.udacity.com/course/ud292"
         },
         {
             "title": "Website Performance Optimization",
             "school": "Udacity",
-            "dates": 2015,
+            "dates": "2015",
             "url": "https://www.udacity.com/course/ud884"
         }
     ],
     "display": function () {
-        for (var i in education.schools) {
+        for (var i = 0; i < education.schools.length; i++) {
             if (this[i] !== 0) {
                 $("#education").append(HTMLschoolStart);
                 var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[i].name).replace("#", education.schools[i].url);
@@ -122,7 +122,7 @@ var education = {
                 $(".education-entry:last").append(formattedSchoolDates);
             }
         }
-        for (i in education.onlineCourses) {
+        for (var i = 0; i < education.onlineCourses.length; i++) {
             if (this[i] !== 0) {
                 $("#onlineclasses").append(HTMLonlineStart);
                 var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title).replace("#", education.onlineCourses[i].url);
@@ -168,7 +168,7 @@ var work = {
         }
     ],
     "display": function () {
-        for (var i in work.jobs) {
+        for (var i = 0; i < work.jobs.length; i++) {
             if (this[i] !== 0) {
                 $("#workExperience").append(HTMLworkStart);
                 var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer).replace("#", work.jobs[i].url);
@@ -189,10 +189,10 @@ var work = {
 work.display();
 
 var projects = {
-    "project": [
+    "projects": [
         {
             "title": "Project #1: Mockup to Website",
-            "dates": 2015,
+            "dates": "2015",
             "description": "This project replicates a design document as closely as possible in HTML and CSS.",
             "images": [
                 {
@@ -204,7 +204,7 @@ var projects = {
         },
         {
             "title": "Project #2: Interactive Resume",
-            "dates": 2015,
+            "dates": "2015",
             "description": "Create objects from four JSONs, each one representing a different resume section. Encapslate functions such as display() within their objects, and iterate through each JSON appending its information to index.html in the correct section.",
             "images": [
                 {
@@ -216,7 +216,7 @@ var projects = {
         },
         {
             "title": "Project #3: Arcade Game",
-            "dates": 2015,
+            "dates": "2015",
             "description": "Object Oriented JavaScript and HTML5 Canvas are used to reproduce a Frogger-like arcade game.",
             "images": [
                 {
@@ -228,7 +228,7 @@ var projects = {
         }
     ],
     "display": function () {
-        for (var i in projects.project) {
+        for (var i = 0; i < projects.projects.length; i++) {
             if (this[i] !== 0) {
                 var x = i;
                 x %= 2;
@@ -236,16 +236,16 @@ var projects = {
                     $("#projects").append(HTMLprojectClearFix);
                 }
                 $("#projects").append(HTMLprojectStart);
-                var formattedTitle = HTMLprojectTitle.replace("%data%", projects.project[i].title).replace("#", projects.project[i].url);
+                var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title).replace("#", projects.projects[i].url);
                 $(".project-entry:last").append(formattedTitle);
-                var formattedDates = HTMLprojectDates.replace("%data%", projects.project[i].dates);
+                var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[i].dates);
                 $(".project-entry:last").append(formattedDates);
-                var formattedDescription = HTMLprojectDescription.replace("%data%", projects.project[i].description);
+                var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
                 $(".project-entry:last").append(formattedDescription);
-                if (projects.project[i].images.length > 0) {
-                    for (var image in projects.project[i].images) {
+                if (projects.projects[i].images.length > 0) {
+                    for (var image in projects.projects[i].images) {
                         if (this[i] !== 0) {
-                            var formattedImage = HTMLprojectImage.replace("%data%", projects.project[i].images[image].url);
+                            var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[i].images[image].url);
                             $(".project-entry:last").append(formattedImage);
                         }
                     }
