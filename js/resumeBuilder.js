@@ -122,14 +122,14 @@ var education = {
                 $(".education-entry:last").append(formattedSchoolDates);
             }
         }
-        for (var i = 0; i < education.onlineCourses.length; i++) {
-            if (this[i] !== 0) {
+        for (var ii = 0; ii < education.onlineCourses.length; ii++) {
+            if (this[ii] !== 0) {
                 $("#onlineclasses").append(HTMLonlineStart);
-                var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title).replace("#", education.onlineCourses[i].url);
-                var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
+                var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[ii].title).replace("#", education.onlineCourses[ii].url);
+                var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[ii].school);
                 var formattedOnlineCourse = formattedOnlineTitle + formattedOnlineSchool;
-                var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[i].dates);
-                var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[i].url).replace("#", education.onlineCourses[i].url);
+                var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[ii].dates);
+                var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[ii].url).replace("#", education.onlineCourses[ii].url);
                 $(".education-entry:last").append(formattedOnlineCourse);
                 $(".education-entry:last").append(formattedOnlineURL);
                 $(".education-entry:last").append(formattedOnlineDates);
@@ -243,7 +243,7 @@ var projects = {
                 var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
                 $(".project-entry:last").append(formattedDescription);
                 if (projects.projects[i].images.length > 0) {
-                    for (var image in projects.projects[i].images) {
+                    for (var image = 0; image < projects.projects[i].images.length; image++){
                         if (this[i] !== 0) {
                             var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[i].images[image].url);
                             $(".project-entry:last").append(formattedImage);
