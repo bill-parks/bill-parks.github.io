@@ -27,7 +27,7 @@ var HTMLprojectClearFix = '<div class="clearfix visible-xs"></div>';
 var HTMLprojectTitle = '<a href="#" target="_new">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
-var HTMLprojectImage = '<img src="%data%" class="img-responsive">';
+var HTMLprojectImage = '<img src="%data%" class="img-responsive" alt="%alt%">';
 
 var HTMLschoolStart = '<div class="col-md-2"></div><div class="col-md-5 education-entry"></div>';
 var HTMLschoolName = '<a href="#" target="_new">%data%</a>';

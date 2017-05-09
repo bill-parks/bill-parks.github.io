@@ -196,7 +196,8 @@ var projects = {
             "description": "This project replicates a design document as closely as possible in HTML and CSS.",
             "images": [
                 {
-                    "url": "images/page-mock.png"
+                    "url": "images/page-mock.png",
+                    "alt": "page-mock.png"
                 }
             ],
             "url": "https://bill-parks.github.io/frontend-nanodegree-mockup-to-website",
@@ -208,7 +209,8 @@ var projects = {
             "description": "Create objects from four JSONs, each one representing a different resume section. Encapslate functions such as display() within their objects, and iterate through each JSON appending its information to index.html in the correct section.",
             "images": [
                 {
-                    "url": "images/resume.PNG"
+                    "url": "images/resume.PNG",
+                    "alt": "resume.png"
                 }
             ],
             "url": "#",
@@ -220,7 +222,8 @@ var projects = {
             "description": "Object Oriented JavaScript and HTML5 Canvas are used to reproduce a Frogger-like arcade game.",
             "images": [
                 {
-                    "url": "images/frogger.PNG"
+                    "url": "images/frogger.PNG",
+                    "alt": "frogger.png"
                 }
             ],
             "url": "https://bill-parks.github.io/frontend-nanodegree-arcade-game",
@@ -246,6 +249,7 @@ var projects = {
                     for (var image = 0; image < projects.projects[i].images.length; image++){
                         if (this[i] !== 0) {
                             var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[i].images[image].url);
+                            formattedImage = formattedImage.replace("%alt%", projects.projects[i].images[image].alt);
                             $(".project-entry:last").append(formattedImage);
                         }
                     }
